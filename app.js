@@ -59,7 +59,9 @@ function ProvjeriKolacic(id, user){
 }
 
 
-
+app.get('/miroslav',(req, res)=>{
+    res.sendFile(__dirname + '/miroslav.html');                    
+})
 
 app.get('/login',(req, res)=>{
     console.log("Login se upalio")
@@ -138,7 +140,7 @@ app.post('/registriraj',urlencodedParser ,(req, res)=>{
     
 })
 
-app.listen(5000, ()=>{
+app.listen(5002, ()=>{
     console.log("Server radi")
 })
 
